@@ -96,8 +96,8 @@ addng the following to the environment configuration file:
   SslRequirement.redirect_status = :moved_permanently
 
 P.S.: Beware when you include the `SslRequirement` module. At the time of
-inclusion, it'll add the `before_filter` that validates the declarations. Some
-times you'll want to run other `before_filter`s before that. They should then be
+inclusion, it'll add the `before_action` that validates the declarations. Some
+times you'll want to run other `before_action`s before that. They should then be
 declared ahead of including this module.
 
 SSL URL Helper

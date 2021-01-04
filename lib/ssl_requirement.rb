@@ -71,7 +71,7 @@ module SslRequirement
     class_attribute :ssl_required_except_actions
     class_attribute :ssl_allowed_actions
 
-    before_filter :ensure_proper_protocol
+    before_action :ensure_proper_protocol
   end
 
   module ClassMethods
